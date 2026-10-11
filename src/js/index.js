@@ -45,11 +45,6 @@ itemHovers.forEach((item) => {
 });
 };
 
-LoadSoundOnHover(
-  document.getElementById("hero-image-sound"), 
-  ".hero-image-container"
-);
-
 const LoadAnimationsOnScroll = (nextIndex) => {
   const sections = document.querySelectorAll('.container > section');
   const targetSection = sections[nextIndex];
