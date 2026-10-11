@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 260" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d99ab5"/>
+      <stop offset="100%" stop-color="#b9789b"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9d596"/>
+      <stop offset="100%" stop-color="#aebd78"/>
+    </linearGradient>
+    <linearGradient id="underside" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c98ba8"/>
+      <stop offset="100%" stop-color="#a86d91"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <!-- Transparent space above: this SVG is intended to sit over the seam -->
+
+  <!-- Soft shadow underneath the grassy lip -->
+  <path d="M0 82
+           C85 72 125 96 210 82
+           C295 68 350 91 435 79
+           C520 67 575 94 660 79
+           C745 64 805 91 890 77
+           C975 63 1035 93 1120 79
+           C1205 65 1260 91 1345 78
+           C1430 65 1510 91 1600 73
+           L1600 260 L0 260 Z"
+        fill="#76566f" opacity=".20" filter="url(#softShadow)"/>
+
+  <!-- Main pink cliff -->
+  <path d="M0 94
+           C80 82 130 104 210 91
+           C292 77 350 101 435 88
+           C520 75 578 100 662 87
+           C746 74 805 99 890 85
+           C974 72 1034 101 1120 87
+           C1205 73 1262 98 1347 86
+           C1430 74 1515 98 1600 81
+           L1600 260 L0 260 Z"
+        fill="url(#rock)"/>
+
+  <!-- Irregular darker underside -->
+  <path d="M0 164
+           C90 151 145 178 230 163
+           C315 148 370 177 455 162
+           C540 147 598 175 682 161
+           C766 147 823 176 908 160
+           C993 145 1052 176 1135 160
+           C1220 144 1280 174 1360 159
+           C1445 144 1520 171 1600 153
+           L1600 260 L0 260 Z"
+        fill="url(#underside)" opacity=".48"/>
+
+  <!-- Soft vertical rock facets -->
+  <path d="M145 118 C170 145 154 195 178 247 L255 260 L235 112 Z"
+        fill="#e2a6bc" opacity=".42"/>
+  <path d="M505 108 C530 150 510 205 538 260 L610 260 L595 103 Z"
+        fill="#a96f93" opacity=".18"/>
+  <path d="M900 108 C925 150 905 208 936 260 L1005 260 L990 103 Z"
+        fill="#e5a9bf" opacity=".35"/>
+  <path d="M1280 105 C1305 150 1287 205 1315 260 L1390 260 L1372 100 Z"
+        fill="#a96f93" opacity=".18"/>
+
+  <!-- Grass cap -->
+  <path d="M0 84
+           C76 72 126 95 210 81
+           C295 67 351 90 435 78
+           C520 65 578 92 662 77
+           C746 64 806 90 890 76
+           C975 62 1034 92 1120 77
+           C1205 63 1262 90 1347 76
+           C1430 63 1514 89 1600 71
+           L1600 105
+           C1518 121 1430 98 1347 112
+           C1262 126 1205 101 1120 115
+           C1034 129 975 100 890 114
+           C806 128 746 101 662 116
+           C578 130 520 103 435 117
+           C351 131 295 107 210 121
+           C126 135 76 112 0 124 Z"
+        fill="url(#grass)"/>
+
+  <!-- Small hanging grass tufts -->
+  <g fill="#a9b978">
+    <path d="M115 108 q8 38 19 0 q10 45 20 0 q10 31 19 0 l-2 28 h-54z"/>
+    <path d="M690 105 q8 34 18 0 q9 42 19 0 q9 28 18 0 l-2 25 h-51z"/>
+    <path d="M1115 104 q8 38 18 0 q10 43 20 0 q9 29 18 0 l-2 27 h-52z"/>
+    <path d="M1490 100 q8 39 19 0 q9 43 19 0 q9 28 18 0 l-2 28 h-53z"/>
+  </g>
+
+  <!-- Tiny decorative stones -->
+  <g fill="#d5a6b8" opacity=".75">
+    <ellipse cx="330" cy="151" rx="18" ry="7"/>
+    <ellipse cx="350" cy="158" rx="10" ry="5"/>
+    <ellipse cx="780" cy="145" rx="16" ry="6"/>
+    <ellipse cx="800" cy="152" rx="9" ry="4"/>
+    <ellipse cx="1215" cy="148" rx="17" ry="6"/>
+    <ellipse cx="1237" cy="154" rx="9" ry="4"/>
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+.projects{
+    /* background-image: url("/src/assets/bg-projects.png"); */
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    position: relative;
+    font-family: 'Fedoka', sans-serif;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: fit-content;
+}
+
+.projects-desc{
+    text-shadow: 2px 2px 4px rgba(255, 180, 210, 0.4);
+    background-color: transparent;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0;
+}
+
+.projects-title-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 2rem;
+}
+
+.projects-section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(9px);
+    background: rgba(255, 255, 255, 0.04);
+
+    /* 2. Double-Ended Fade Mask (Top and Bottom) */
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 12%,
+        black 88%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 12%,
+        black 88%,
+        black 93%,
+        transparent 100%
+    );
+    width: 100vw;
+    height: 55%;
+    box-shadow: 0 10px 30px rgba(255, 160, 200, 0.4);
+    font-family: sans-serif;
+    padding-bottom: 10rem;
+}
+
+.projects-title{
+    margin-top: 25%;
+    background-color: transparent;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(255, 180, 210, 0.4);
+    font-size: 2rem;
+    width: fit-content;
+    color: #4A1D34;
+}
+

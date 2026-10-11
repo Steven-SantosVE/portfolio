@@ -1,0 +1,129 @@
+@import "clouds.css";
+
+.hero{
+    /* background-image: url("/src/assets/hero-bg.png"); */
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+}
+
+
+.hero-desc{
+    background-color: transparent;
+    color: var(--cream);
+    perspective: 1000px;
+    z-index: 2;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+}
+
+.hero-name{
+    position: absolute;
+    top: -50px;
+    left: 60px;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 3.8rem;
+    color: white;
+    letter-spacing: 4px;
+    
+    text-shadow: 
+    0 1px 0 #ccc, 0 2px 0 #c5c5c5, 0 3px 0 #bbb, 0 4px 0 #b5b5b5, 
+    0 5px 0 #aaa, 0 6px 0 #999, 0 7px 0 #888,
+    0 12px 20px rgba(0, 0, 0, 0.4);
+    
+    transform: rotateX(10deg) rotateY(-4deg) translateZ(0);
+}
+
+.hero-lastname{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 8.5rem;
+    color: white;
+    font-weight: 900;
+    line-height: 0.9;
+    margin: 0;
+    padding: 0;
+    
+    text-shadow: 
+    0 1px 0 #ccc, 0 2px 0 #c5c5c5, 0 3px 0 #bbb, 0 4px 0 #b5b5b5, 
+    0 5px 0 #aaa, 0 6px 0 #999, 0 7px 0 #888,
+    0 12px 20px rgba(0, 0, 0, 0.4);
+    
+    transform: rotateX(10deg) rotateY(-4deg) translateZ(0);
+}
+
+.smash-logo{
+    background-color: transparent;
+    font-family: "Super Smash 4.1";
+    font-size: 10.5rem;
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+    margin-left: 8px;
+    margin-right: 0px;
+    padding-left: 0px;
+    
+    text-shadow: 
+    0 1px 0 #ccc, 0 2px 0 #c5c5c5, 0 3px 0 #bbb, 0 4px 0 #b5b5b5, 
+    0 5px 0 #aaa, 0 6px 0 #999, 0 7px 0 #888,
+    0 12px 20px rgba(0, 0, 0, 0.4);
+    
+    transform: rotateX(10deg) rotateY(-4deg) translateZ(0);    
+}
+
+.last-letter{
+    background-color: transparent;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 8.5rem;
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+    margin-left: 0px;
+    margin-right: 8px;
+    padding-left: 0px;
+    
+    text-shadow: 
+    0 1px 0 #ccc, 0 2px 0 #c5c5c5, 0 3px 0 #bbb, 0 4px 0 #b5b5b5, 
+    0 5px 0 #aaa, 0 6px 0 #999, 0 7px 0 #888,
+    0 12px 20px rgba(0, 0, 0, 0.4);
+    
+    transform: rotateX(10deg) rotateY(-4deg) translateZ(0);
+}
+
+.hero-title{
+    text-shadow: 
+    0 1px 0 #ccc, 0 2px 0 #c5c5c5, 0 3px 0 #bbb, 0 4px 0 #b5b5b5, 
+    0 5px 0 #aaa, 0 6px 0 #999, 0 7px 0 #888,
+    0 12px 20px rgba(0, 0, 0, 0.4);
+    
+    background-color: transparent;
+    font-family: 'Impact', 'Arial Black', sans-serif;       
+    
+    margin: 0;
+    margin-left: 45%;
+    padding: 0;
+    font-size: 1.6rem;
+    transform: rotateX(0deg) rotateY(-4deg) translateZ(-90deg);
+}
+
+.hero-image{
+    width: 650px;
+    height: 650px;
+    filter: drop-shadow(10px 15px 12px rgba(0, 0, 0, 0.4));
+}
+
+.hero-image-container{
+    animation-name: kirby-swordspin;
+    animation-duration: 1.4s;
+}
+
+
+.hero-image-container, .hero-image{
+    background-color: transparent;
+    z-index: 9;
+}

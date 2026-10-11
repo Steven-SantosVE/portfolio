@@ -1,0 +1,120 @@
+@import url("animations.css");
+@import url("/src/css/navbar/navbar.css");
+@import url("/src/css/navbar/cnavbar.css");
+@import url("/src/css/hero/hero.css");
+@import url("/src/css/about.css");
+@import url("/src/css/projects/projects.css");
+@import url("/src/css/projects/projectCards.css");
+@import url("/src/css/contact.css");
+@import url("/src/css/responsive/mobile.css");
+@import url("/src/css/footer.css");
+
+@font-face {
+  font-family: "Super Smash 4.1";
+  src: url("/src/fonts/super_smash_4_1_by_pokemon_diamond-d7zxu6d.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --pink: #FF6B9D;
+  --pink-dark: #E84D7A;
+
+  --cream: #FFF8F2;
+  --white: #FFFFFF;
+
+  --yellow: #FFD84D;
+  --blue: #6EC6E8;
+  --mint: #7DD9B5;
+
+  --purple: #4B365C;
+  --text: #30243A;
+  --muted: #766B80;
+}
+
+*{
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+a{
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--pink-dark);
+}
+
+section{
+    margin: 0;
+    padding: 0;
+}
+
+#portfolio-body{
+    width: 100%;
+    min-height: 400vh; /* 100vh per section x 2 sections */
+
+    /* Background setup */
+    background-image: url("/src/assets/general-bg.jpg");
+    background-size: 100% 100%; /* Stretches width to 100%, height adjusts automatically */
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+html, body{
+    margin:0;
+    padding: 0;
+    font-family:'Super Smash 4.1' , sans-serif;
+    overflow-x: hidden;
+}
+
+.hero, .about, .projects, .contact{
+    width: 100vw; 
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    background-color: transparent;
+}
+
+.projects-image{
+    height: 250px;
+}
+
+.hero-name,
+.smash-logo,
+.hero-image,
+.hero-lastletter,
+.hero-lastname,
+.hero-title,
+.about-desc-container,
+.about-image,
+.projects-section-container,
+.form-container{
+  opacity: 0;
+  transform: translateY(200px); /* Or translateX */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.hero.visible .hero-name,
+.hero.visible .smash-logo,
+.hero.visible .hero-image,
+.hero.visible .hero-lastletter,
+.hero.visible .hero-lastname,
+.hero.visible .hero-title,
+.about.visible .about-container,
+.about.visible .about-desc-container,
+.about.visible .about-image,
+.projects.visible .projects-section-container,
+.contact.visible .form-container{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.projects-image{
+    opacity: 0;
+    transition: opacity 1.2s ease-out;
+}
+
+.projects.visible .projects-image {
+    opacity: 1;
+}
