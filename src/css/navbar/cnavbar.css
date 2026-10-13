@@ -13,6 +13,33 @@
     top: 3%;
     left: 2%;
     z-index: 1001;
+    display: visible;
+}
+
+.navbar-toggle.visible{
+    display: none;
+}
+
+.navbar-close{
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 2%;
+    z-index: 1001;
+    overflow: hidden;
+    top: 3.5%;
+    left: 0%;
+    z-index: 1001;
+    display: none;
+}
+
+.navbar-close.visible{
+    display: flex;
 }
 
 .navbar-toggle:hover {
@@ -56,14 +83,19 @@
     align-items: center;
     height: 100vh;
     width: 40vw;
-        background: rgba(255, 255, 255, 0.35); backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.35); backdrop-filter: blur(55px);
     z-index: 1000;
     display: none;
 }
 
+.navbar-item-collapsed:hover, .navbar-item-collapsed a:hover{
+    transform: scale(1.2);
+    transition: 0.1s ease;
+    color: var(--cream);
+}
+
 .navbar-collapsed.visible{
     display: flex;
-    animation: fade_in 0.5s ease-in-out;
     margin-left: 0;
 }
 
@@ -77,4 +109,19 @@
 .navbar-item-collapsed a{
     color: var(--pink);
     text-decoration: none;
+}
+
+.navbar-item-collapsed a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff2f8;
+  transition: width 0.3s ease;
+}
+
+.navbar-item-collapsed a:hover::after {
+  width: 100%;
 }

@@ -21,12 +21,22 @@ export const burguerNavbar = (index) => {
 };
 
 const toggleButton = () => {
-    const navbartoggle = document.getElementById("navbar-toggle");
+    const navbarToggle = document.getElementById("navbar-toggle");
     const navbarCollapsed = document.querySelector(".navbar-collapsed");
+    const navbarClose = document.querySelector(".navbar-close");
 
-    navbartoggle.addEventListener("click", () => {
+    navbarToggle.addEventListener("click", () => {
         navbarCollapsed.classList.toggle("visible");
+        navbarToggle.classList.toggle("visible");
+        navbarClose.classList.toggle("visible");
     }); 
+
+    navbarClose.addEventListener("click", () =>{
+        navbarCollapsed.classList.toggle("visible");
+        navbarToggle.classList.toggle("visible");
+        navbarClose.classList.toggle("visible");
+    });
 };
+
 
 toggleButton();
