@@ -1,8 +1,8 @@
-function handleWindowResize() {
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-  console.log(`Viewport size: ${width}px x ${height}px`);
-}
+// function handleWindowResize() {
+//   const width = window.innerWidth;
+//   const height = window.innerHeight;
+//   console.log(`Viewport size: ${width}px x ${height}px`);
+// }
 
 // Initial call to log the viewport size
 // window.addEventListener('resize', () => {
@@ -24,6 +24,8 @@ const toggleButton = () => {
     const navbarToggle = document.getElementById("navbar-toggle");
     const navbarCollapsed = document.querySelector(".navbar-collapsed");
     const navbarClose = document.querySelector(".navbar-close");
+    const navbarItemCol = document.querySelectorAll(".navbar-item-collapsed")
+    
 
     navbarToggle.addEventListener("click", () => {
         navbarCollapsed.classList.toggle("visible");
@@ -36,7 +38,16 @@ const toggleButton = () => {
         navbarToggle.classList.toggle("visible");
         navbarClose.classList.toggle("visible");
     });
-};
 
+    const closeNavOnClick = () =>{
+        for (let i = 0; i < navbarItemCol.length; i++) {
+            navbarItemCol[i].addEventListener("click", () => {
+                navbarCollapsed.classList.toggle("visible");
+                navbarClose.classList.toggle("visible");
+                navbarToggle.classList.toggle("visible");
+            });
+    }};
+    closeNavOnClick()
+};
 
 toggleButton();
