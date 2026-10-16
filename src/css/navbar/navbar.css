@@ -76,6 +76,40 @@
 
 .navbar-item-image{
     background-color: transparent;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 /* Image Navbar */
+
+.cv-download-navbar{
+    font-size: 1.4rem;
+    margin-left: 6%;
+    margin-right: 6%;
+    background-color: var(--cream);
+    color: var(--pink-dark);
+    transition: transform 0.3s ease;
+    align-content: center;
+}
+
+.cv-container{
+    padding: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 2rem;
+    border: 4px solid var(--pink-dark);
+}
+
+.cv-container:hover .cv-download-navbar{
+    background-color: var(--pink);
+    color: var(--cream);
+    transition: 0.4s ease;
+}
+
+.cv-container:hover{
+    background-color: var(--pink);
+    border: 4px solid var(--pink);
+    scale: 1.2;
+    transition: 0.4s ease;
+    cursor: pointer;
+    border: 4px solid var(--cream);
+}
+
