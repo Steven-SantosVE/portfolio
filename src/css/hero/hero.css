@@ -5,6 +5,7 @@
     background-size: cover;
     z-index: 0;
     position: relative;
+    height: 100vh;
 }
 
 
@@ -98,7 +99,6 @@
 .hero-title{
     text-shadow: 
     0 1px 0 #ccc, 0 2px 0 #c5c5c5, 0 3px 0 #bbb, 0 4px 0 #b5b5b5, 
-    0 5px 0 #aaa, 0 6px 0 #999, 0 7px 0 #888,
     0 12px 20px rgba(0, 0, 0, 0.4);
     
     background-color: transparent;
@@ -109,6 +109,25 @@
     padding: 0;
     font-size: 1.6rem;
     transform: rotateX(0deg) rotateY(-4deg) translateZ(-90deg);
+}
+
+.fun-fact{
+    background-color: transparent;
+    font-family: 'Impact', 'Arial Black', sans-serif;       
+    
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.6rem;
+
+    background-color: var(--pink);
+    width: fit-content;
+    border-radius: 3rem;
+}
+
+.fun-fact:hover{
+    background-color: #ff638a;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
 .hero-image{

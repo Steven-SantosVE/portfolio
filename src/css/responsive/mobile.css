@@ -124,7 +124,6 @@
 @media (max-width: 1000px){
     .form-container{
         padding: 0, 0, 100%, 100%;
-        padding-top: 100px;
     }
 }
 
@@ -181,6 +180,27 @@
     }
 }
 
+@media (max-width: 961px){
+    .about-image{
+        bottom: -20%;
+    }
+    .about-container{
+        height: 50vh;
+    }
+    .hero{
+        height: 50vh;
+    }
+    .about{
+        height: 50vh;
+    }
+    .contact{
+        height:100vh;
+    }
+    .projects{
+        height: 1500px;
+    }
+}
+
 @media (max-width: 838px){
     .about{
         padding-bottom: 100%;
@@ -234,5 +254,11 @@
 @media (max-width: 400px){
     .about-image{
         bottom: 18%;
+    }
+}
+
+@media (max-width: 375px){
+    .about-image{
+        bottom: 4%;
     }
 }
