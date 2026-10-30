@@ -1,12 +1,11 @@
 .fun-fact-modal{
     font-family: 'Fedoka', sans-serif;
-    height: 100vh;
-    width: 100vw;
-    z-index: 999999;
-    position: absolute;
-    background-color: rgba(172, 172, 172, 0.342);
+    height: 200vh;
+    width: 200vw;
+    z-index: 999999999999999999;
+    position: fixed;
+    background-color: rgba(158, 158, 158, 0.61);
     display: none;
-    position: absolute;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -18,9 +17,9 @@
 
 .fun-fact-desc{
     display: flex;
-    height: 50vh;
+    height: fit-content;
     width: 50vw;
-    background-color: var(--pink);
+    background: rgba(255, 128, 192, 0.35); backdrop-filter: blur(50px);
     border-radius: 4rem;
     color: var(--cream);
     padding: 4rem;
@@ -28,9 +27,48 @@
     align-items: center;
     text-align: center;
     font-size: xx-large;
+    box-shadow: 0px 0px 100px var(--cream);
 }
 
 .fun-fact-desc p{
     padding-bottom: 1rem;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.637);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.651);
 }
+
+.close-funfact{
+    position: fixed;
+    width: 30px;
+    top: 7%;
+    right: 5%;
+}
+
+.close-funfact:hover{
+    cursor: pointer;
+}
+
+.fun-fact:hover{
+    background-color: #ff638a;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    scale: 1.2;
+}
+
+@media (max-width: 1032px){
+    .fun-fact-modal{
+        margin-top: -30rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .fun-fact-modal{
+        margin-top: -5rem;
+    }
+}
+
+@media (max-width: 961px){
+    .fun-fact-modal{
+        margin-top: 24rem;
+    }
+}
+
+

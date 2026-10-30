@@ -88,7 +88,7 @@ html, body{
 .hero-title,
 .about-desc-container,
 .about-image,
-.projects-section-container,
+/* .projects-section-container, */
 .form-container{
   opacity: 0;
   transform: translateY(200px); /* Or translateX */
@@ -104,7 +104,7 @@ html, body{
 .about.visible .about-container,
 .about.visible .about-desc-container,
 .about.visible .about-image,
-.projects.visible .projects-section-container,
+/* .projects.visible .projects-section-container, */
 .contact.visible .form-container{
   opacity: 1;
   transform: translateX(0);

@@ -3,6 +3,7 @@ let currentSection = 0;
 let isScrolling = false;
 const audioScroll = document.getElementById("scrollsound");
 import { burguerNavbar } from "./navbar.js";
+import {disableScroll, enableScroll} from "./scrollFunctions.js" 
 
 const startAudio = (audio) => {
     audio.play()
@@ -86,7 +87,12 @@ function handleScroll(e) {
 
 container.addEventListener('wheel', (event)=> {
     if(window.innerWidth > 1000){
-      handleScroll(event);
+      const modal = document.querySelector('.fun-fact-modal'); 
+
+      // If the modal doesn't exist OR isn't visible, allow custom scrolling
+      if (!modal || !modal.classList.contains("visible")) {
+        handleScroll(event);
+      } 
     }
 }, {passive: false});
 
@@ -152,3 +158,26 @@ if (document.readyState === "loading") {
 window.addEventListener('resize', () => {
   burguerNavbar(currentSection);
 });
+
+const funFactDisplay = () => {
+  const funFactButton = document.querySelector(".fun-fact");
+  const closeButton = document.querySelector(".close-funfact");
+  
+  function toggleVisibility(){
+    document.querySelector(".fun-fact-modal").classList.toggle("visible");
+    document.querySelector('.portfolio-navbar').classList.toggle("invisible");
+  }
+
+  funFactButton.addEventListener("click", ()=>{
+    console.log("clicked funfact modal opener")
+    toggleVisibility()
+    disableScroll();
+  });
+
+  closeButton.addEventListener("click", ()=>{
+    toggleVisibility()
+    enableScroll()
+  })
+};
+
+funFactDisplay();

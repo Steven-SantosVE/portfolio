@@ -11,8 +11,7 @@
     position: absolute;
     background-color: transparent;
     z-index: 2;
-    width: 720px;
-    height: 720px;
+    width: 45%;
     margin-top: 80px;
     left: 57%;
     filter: drop-shadow(10px 15px 12px rgba(0, 0, 0, 0.42));
@@ -179,6 +178,72 @@
 
 .sql-icon{
     margin-left: 8px;
+}
+
+@media (max-width: 1433px){
+    .about-image{
+        width: 40%;
+        left: 60%;
+    }
+}
+
+@media (max-width: 1293px){
+    .about-image{
+        width: 40%;
+        
+    }
+}
+
+@media (max-width: 1000px){
+    .about-image{
+        width: 40%;
+        bottom: 0%;
+    }
+}
+
+@media (max-width: 961px){
+    .about-image{
+        width: 40%;
+        left: 64%;
+    }
+}
+
+@media (max-width: 833px){
+    .about-image{
+        width: 40%;
+        top: 35%;
+    }
+}
+
+@media (max-width: 653px){
+    .about-image{
+        width: 60%;
+        top: 35%;
+        left: 45%;
+    }
+}
+
+@media (max-width: 603px){
+    .about-image{
+        width: 65%;
+        top: 50%;
+        left: 45%;
+    }
+}
+@media (max-width: 497px){
+    .about-image{
+        width: 65%;
+        top: 55%;
+        left: 45%;
+    }
+}
+
+@media (max-width: 419px){
+    .about-image{
+        width: 70%;
+        top: 63%;
+        left: 45%;
+    }
 }
 
 

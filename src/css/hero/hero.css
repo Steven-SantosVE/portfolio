@@ -124,11 +124,6 @@
     border-radius: 3rem;
 }
 
-.fun-fact:hover{
-    background-color: #ff638a;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
 
 .hero-image{
     width: 650px;
